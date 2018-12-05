@@ -19,7 +19,7 @@
         </div>
         <div class="catalog-thumbs-item c">
             <img src="/assets/img/home-img-3.jpg" alt="">
-            <a href="produkciya/proizvodstvo-vodostrujnyh-ustanovok/" class="ct-link">{25 | resource: 'pagetitle'}</a>
+            <a href="{$_modx->makeUrl(26)}" class="ct-link">{26 | resource: 'pagetitle'}</a>
         </div>
     </div>
     <!--/CATALOG THUMBS-->
