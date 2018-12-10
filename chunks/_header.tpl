@@ -9,12 +9,12 @@
             <nav class="top-menu">
                 {'pdoMenu'|snippet:[
                 'parents' => '9',
+                'limit' => '6'
                 ]}
             </nav>
             <div class="search-form">
                 <label style="color: #ffffff; position: absolute; top: 30px; left: 35px; font-size: 16px;">Поиск по
                     сайту</label>
-                <h3>error: AjaxSearchUtil classe not found</h3>
 
             </div>
             <!--***-->
@@ -30,7 +30,8 @@
             <nav class="home-site-nav">
                 {'pdoMenu'|snippet:[
                 'parents' => '0',
-                'level' => '1'
+                'level' => '1',
+                'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]><i>[[+menutitle]]</i></a>[[+wrapper]]</li>'
                 ]}
             </nav>
             <!--***-->
@@ -51,7 +52,6 @@
                     <div class="search-form">
                         <label style="color: #ffffff; position: absolute; top: 30px; left: 35px; font-size: 16px;">Поиск
                             по сайту</label>
-                        <h3>error: AjaxSearchUtil classe not found</h3>
 
                     </div>
                     <!--***-->

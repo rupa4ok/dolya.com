@@ -10,7 +10,7 @@ switch ($modx->event->name) {
         ];
         break;
     case 'OnLoadWebDocument':
-        // Работаем только с ресурсами класса modDocument. Вообще, условия можно прописать любые.
+        // Работаем только с ресурсами класса modDocument.
         if ($modx->resource instanceof modDocument) {
             $data = $modx->resource->toArray();
             $modx->resource = $modx->newObject('fenomDocument');
