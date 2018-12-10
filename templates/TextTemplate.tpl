@@ -60,12 +60,16 @@
                     {$_modx->resource.h1}
                 {/if}
             </h1>
-            <!--***-->
-            <a href="forma-obratnoj-svyazi/" class="button top-page-button">Оставить заявку</a>
+            {if $_modx->resource.id == '24' OR $_modx->resource.parent == '35'}
+                <div class="buttons right"><a href="forma-obratnoj-svyazi/" class="button">Оставить заявку</a></div>
+            {/if}
 
             {$_modx->resource.content}
 
+            {if $_modx->resource.id == '24' OR $_modx->resource.parent == '35'}
             <div class="buttons right"><a href="forma-obratnoj-svyazi/" class="button">Оставить заявку</a></div>
+            {/if}
+
             <!--***-->
         </main>
         <!--/CONTENT-->
