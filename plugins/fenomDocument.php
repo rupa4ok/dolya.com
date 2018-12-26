@@ -8,7 +8,7 @@ switch ($modx->event->name) {
             'fields' => [],
             'fieldMeta' => [],
         ];
-        break;
+        break; 
     case 'OnLoadWebDocument':
         // Работаем только с ресурсами класса modDocument.
         if ($modx->resource instanceof modDocument) {
