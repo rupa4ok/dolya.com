@@ -13,7 +13,13 @@
                 <span class="B_crumbBox"><span class="B_firstCrumb"><a class="B_homeCrumb" href="/" title="Главная">Главная</a></span> / <span class="B_lastCrumb"><span class="B_currentCrumb"></span></span></span>
             </div>
             <!--***-->
-            <h1 class="page-title pdng-r-250">Продукция</h1>
+            <h1 class="page-title pdng-r-250">
+                {if $_modx->resource.h1 == ''}
+                    {$_modx->resource.pagetitle}
+                {else}
+                    {$_modx->resource.h1}
+                {/if}
+            </h1>
 
             {'!pdoResources' | snippet : [
             'parents' => 9,
